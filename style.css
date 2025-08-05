@@ -1,0 +1,49 @@
+body {
+  background: #0e0e1a;
+  color: #ffffff;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+.glow {
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 30px #9900ff;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #1e1e2f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff00cc;
+}
+
+button:hover {
+  background: #2a2a40;
+}
+
+.hidden {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ff99ff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
